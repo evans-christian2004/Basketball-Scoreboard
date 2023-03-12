@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score Board</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-side">
+        <h3>HOME</h3>
+        <p class="score" id="home-score">0</p>
+        <div class="button-group">
+          <button class="score-btn" onclick="homeFreethrow()">+1</button>
+          <button class="score-btn" onclick="homeTwoPointer()">+2</button>
+          <button class="score-btn" onclick="homeThreePointer()">+3</button>
+        </div>
+      </div>
+      <div class="right-side">
+        <h3>GUEST</h3>
+        <p class="score" id="guest-score">0</p>
+        <div class="button-group">
+          <button class="score-btn" onclick="guestFreethrow()">+1</button>
+          <button class="score-btn" onclick="guestTwoPointer()">+2</button>
+          <button class="score-btn" onclick="guestThreePointer()">+3</button>
+        </div>
+      </div>
+    </div>
+    <button class="reset" onclick="reset()">Reset Scoreboard</button>
+  </body>
+</html>
